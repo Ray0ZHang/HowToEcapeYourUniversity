@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>    
+<meta charset="utf-8">
+    <!-- 表示当前 HTML 文档的字符编码为 UTF-8，也就是一种 Unicode 字符编码。 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- "X-UA-Compatible" 是一个 HTTP 头部扩展，可以用来指定浏览器所需的文档兼容模式。 -->
+    <!-- "IE=edge"，表示使用 Internet Explorer 最新的渲染引擎； -->
+    <!-- 也可以设置为其他值，如 "IE=7"，表示使用 Internet Explorer 7 的兼容模式来渲染网页。 -->
+<meta name="viewport" content="width=device-width, initial-scale=0.9,user-scalable=0"/>
+    <!-- width=device-width 表示将视口的宽度设置为设备的宽度 -->
+    <!-- initial-scale=0.9 表示网页的初始缩放比例为 0.9 -->
+    <!-- user-scalable=0 表示用户不能对网页进行缩放操作 -->
+<title>验证结果</title>
+<style type="text/css">
+	div{line-height:50px;
+		text-align:center;
+		font-size:28px;}
+</style>
+
+<script>
+function Time(){
+var T = new Date();
+var M = T.getMonth()+1;
+    // 在JavaScript中，月份的范围是0到11，
+    // 其中0表示一月，1表示二月，以此类推。
+    // 调用getMonth()方法返回的是0到11之间的整数，为了得到正确的月份，需要加1。
+var D = T.getDate(); 
+var H = T.getHours().toString().padStart(2, "0");
+var Min = T.getMinutes().toString().padStart(2, "0");
+document.getElementById("Time").innerHTML ="当前时间是: "+M+"月"+D+"日"+" "+H+":"+Min;}
+setInterval(function() {Time()},1000);
+</script>    
+    <!-- document表示当前文档对象 -->
+    <!-- getElementById是一个 DOM (文档对象模型) 的方法，用于通过元素的 id 属性获取该元素。 -->
+    <!-- time则是需要获取的元素的 id 属性值。 -->
+    <!-- innerHTML则是该元素的一个属性，它用于获取或设置 HTML 元素的内容。 -->
+    <!-- setInterval() 该函数周期性地调用指定的Time() 函数 -->
+    <!-- 第二个参数设置为 1000，表示每隔一秒钟就会调用一次 -->
+</head> 
+    <!-- 函数中使用了 Date() 构造函数来创建一个包含当前日期和时间的对象，并将其存储在变量 a 中。 -->
+    <!-- 然后，使用 Date() 对象的方法来获取当前的年份、月份、日期、小时数和分钟数 -->
+    <!-- 并将它们分别存储在变量 b、c、d、e 和 f 中 -->
+
+<body style="margin:20px auto;width:90%" onload="reloadImg()">
+    <!-- margin:20px auto;20像素的外边距 -->
+    <!-- width:90%设置90%的宽度 -->
+    <!-- auto值指定了左右外边距自动居中，文本内容在页面中水平居中显示。 -->
+        <!-- 这里要做一个用户上传图片的功能实现图片更改 -->
+    <!-- onload属性指定了当页面加载完成后要执行JavaScript函数-->
+    <!-- 调用名为reloadImg()的函数。 -->
+    <!-- 用于重新加载图像或其他内容 -->
+<div>您的进校验证结果</div>
+<div  style="color:#00AA00;">
+    <!-- 颜色为绿色 -->
+<div><img  
+    style="width:150px"; 
+    src='https://img1.doubanio.com/view/group_topic/l/public/p366375328.webp'>
+</div>
+    <!-- 宽度限制为150像素 -->
+    <!--img用来表示图片。可以通过 src 属性指定图片的 URL 地址，也可以通过 alt 为图片添加文本描述。 -->
+    <!-- src可以替换为别的链接，这里选取了豆瓣帖子上的丁真证件照 -->
+    <!-- 指定的文件有两种，本地的或有url的 -->
+<span>丁真</span><br/>
+    <!-- <br/>表示换行（line break）的意思。 -->
+    <!-- <br/> 标签是一个自闭合标签 -->
+    <!-- 常常用于在段落中插入换行，或在列表中每个项目之间添加换行。 -->
+<div  style="color:#000000;">
+    <!-- 改变颜色为黑色 -->
+    <span>部门：理学院</span><br/>
+    <span>原因：申请外出后返校</span>  
+<div  style="color:#00AA00;">    
+    <br/><span>您可以进校</span><br/>
+<img 
+    style="width: 150px";
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Eo_circle_light-green_checkmark.svg/768px-Eo_circle_light-green_checkmark.svg.png">
+</div>
+    <!-- 宽度限制为150像素 -->
+    <!-- 后面这个图片是出门系统的对号图片 -->
+<div id="Time" style="font-size: 20px">
+</div>
+    <!-- 这个时间的颜色和格式最近有所改变 -->
+</body>
+</html>
