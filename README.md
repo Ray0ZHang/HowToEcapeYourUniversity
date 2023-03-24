@@ -13,13 +13,13 @@ this files can be saved to the mobile phone.
 Just show it to the security guard when you go out.  
 外出时展示给门卫看即可。  
 
-**EscapeDemo1.html** This file is the original version.
+**EscapeDemo1.html** This file is the original version.  
 **EscapeDemo1.html** 这是最初的版本。
 
-**EscapeDemo2.html** This file was re-edited from the university's webpage.
+**EscapeDemo2.html** This file was re-edited from the university's webpage.  
 **EscapeDemo2.html** 这个文件是根据学校的网页而重新改变的。
 
-**EscapeDemo3.html** This file contains the most detailed comments.
+**EscapeDemo3.html** This file contains the most detailed comments.  
 **EscapeDemo3.html** 这个文件里包含最详细的注释。
 
 
