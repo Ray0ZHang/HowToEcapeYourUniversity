@@ -23,5 +23,5 @@ Just show it to the security guard when you go out.
 **EscapeDemo3.html** 这个文件里包含最详细的注释。
 
 
-I've used chatgpt several times to help me with this, so it's not a hassle.
+I've used chatgpt several times to help me with this, so it's not a hassle.  
 我多次使用了chatgpt来帮助我来做这些，所以这并不麻烦。
